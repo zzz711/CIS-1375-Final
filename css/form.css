@@ -1,0 +1,58 @@
+form,
+h2 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding-right: 0px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-top: 2px;
+  border: solid 2px #425955;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  background:#ffffff;
+}
+
+form>div{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input {
+  display: block;
+  width: 15em;
+  float: left;
+}
+
+input[type='button'],
+input[type='reset'] {
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  width: 33%;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  width: 140px;
+  float: left;
+}

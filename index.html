@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/form.css" />    
+  </head>
+  <body>
+    <script src="scripts/main.js"></script>
+    <h2>Enter Your Information</h2>
+    <form id="form" name="form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" />
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>      
+        <input onclick="insertRow()" type="button" name="submit" id="submit" value="Submit">
+          
+        </input>
+        <input onclick="clearForm()" type="reset" value="Reset" id="reset" name="reset">
+        </input>
+    </form>
+
+    <br />
+
+    <div id="tableDiv" hidden>
+      <table id="table" name="table"> 
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Email Address
+          </th>
+          <th>
+            Date Of Birth
+          </th>
+          <th>
+            Phone Number
+          </th>
+        </tr>
+      </table>
+
+      <button onclick="clearTable()" type="submit" name="clear" id="clear">
+        Clear Table
+      </button>
+    </div>
+  </body>
+</html>
